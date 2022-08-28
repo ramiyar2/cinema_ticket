@@ -1,4 +1,6 @@
+import 'package:cinema_ticket/theme/icons.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class Login extends StatelessWidget {
   const Login({Key? key}) : super(key: key);
@@ -14,7 +16,7 @@ class Login extends StatelessWidget {
             children: [
               Row(
                 children: [
-                  Image.asset('assets/img/logo_op.png'),
+                  Image.asset(Get.isDarkMode ? logoDark : logoLight),
                   Text('Cinema Ticket')
                 ],
               )
