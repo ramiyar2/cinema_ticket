@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name">cinema ticket</string>
     <string name="facebook_app_id">1111754096438719</string>
     <string name="fb_login_protocol_scheme">fb1111754096438719</string>
     <string name="facebook_client_token">753ecb45c86ec8769b45660b78122b57</string>
