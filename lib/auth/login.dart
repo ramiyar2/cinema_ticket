@@ -1,7 +1,4 @@
-import 'package:cinema_ticket/theme/colors.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
 
 class Login extends StatelessWidget {
   const Login({Key? key}) : super(key: key);
@@ -12,7 +9,7 @@ class Login extends StatelessWidget {
       appBar: null,
       body: SafeArea(
         child: Container(
-          color: MyColors().darkerBlue,
+          color: Theme.of(context).backgroundColor,
           child: Column(
             children: [
               Row(
