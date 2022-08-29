@@ -1,5 +1,6 @@
 import 'package:cinema_ticket/auth/login.dart';
 import 'package:cinema_ticket/theme/colors.dart';
+import 'package:cinema_ticket/theme/theme.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -19,9 +20,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      theme: ThemeData(
-        backgroundColor: bg,
-      ),
+      theme: Themes.lightTheme,
+      darkTheme: Themes.darkTheme,
+      themeMode: ThemeMode.dark,
       debugShowCheckedModeBanner: false,
       home: const Login(),
     );
