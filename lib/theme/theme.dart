@@ -58,7 +58,7 @@ class Themes {
     );
   }
 
-  TextStyle get paraStyle {
+  TextStyle get bodyStyle {
     return TextStyle(
       color: Get.isDarkMode ? white : darkBlue,
       fontSize: 14,
