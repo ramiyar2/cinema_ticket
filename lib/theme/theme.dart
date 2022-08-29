@@ -52,7 +52,7 @@ class Themes {
   TextStyle get subTitleStyle {
     return TextStyle(
       color: Get.isDarkMode ? white : darkBlue,
-      fontSize: 48,
+      fontSize: 20,
       fontFamily: 'Cairo',
       fontWeight: FontWeight.normal,
     );
