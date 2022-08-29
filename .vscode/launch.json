@@ -19,14 +19,12 @@
             "name": "emulator 1",
             "request": "launch",
             "type": "dart",
-            "flutterMode": "profile",
             "deviceId": "emulator-5556" 
         },
         {
             "name": "emulator 2",
             "request": "launch",
             "type": "dart",
-            "flutterMode": "profile",
             "deviceId": "emulator-5554" 
         },
         {
