@@ -5,12 +5,12 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "market_place",
+            "name": "cinema_ticket",
             "request": "launch",
             "type": "dart"
         },
         {
-            "name": "market_place (profile mode)",
+            "name": "cinema_ticket (profile mode)",
             "request": "launch",
             "type": "dart",
             "flutterMode": "profile"
@@ -30,7 +30,7 @@
             "deviceId": "emulator-5554" 
         },
         {
-            "name": "market_place (release mode)",
+            "name": "cinema_ticket (release mode)",
             "request": "launch",
             "type": "dart",
             "flutterMode": "release"
