@@ -34,22 +34,13 @@ class Login extends StatelessWidget {
                   )
                 ],
               ),
-              const SizedBox(
-                height: 20,
-              ),
               Text(
                 'Welcome ! \n Back',
                 style: Themes().subHeadingStyle,
               ),
-              const SizedBox(
-                height: 20,
-              ),
               Text(
                 'Log in',
                 style: Themes().importantInfo,
-              ),
-              const SizedBox(
-                height: 20,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -97,21 +88,53 @@ class Login extends StatelessWidget {
               ),
               Row(
                 children: [
-                  Divider(
-                    color: bgWhite,
+                  Expanded(
+                    child: Divider(
+                      color: whiteOp,
+                      thickness: 1,
+                    ),
                   ),
                   Padding(
-                    padding: EdgeInsets.symmetric(vertical: 20, horizontal: 20),
+                    padding: const EdgeInsets.symmetric(
+                        vertical: 20, horizontal: 20),
                     child: Text(
                       'OR',
                       style: Themes().subTitleStyleOP,
                     ),
                   ),
-                  Divider(
-                    color: bgWhite,
+                  Expanded(
+                    child: Divider(
+                      color: whiteOp,
+                      thickness: 1,
+                    ),
                   ),
                 ],
-              )
+              ),
+              const TextField(),
+              const TextField(),
+              Text(
+                'Forget passward ?',
+                style: Themes().subTitleStyleOP,
+              ),
+              ElevatedButton(
+                  onPressed: () {},
+                  child: Row(
+                    children: [
+                      Expanded(
+                        child: Text(
+                          'Log in',
+                          style: Themes().headingStyle,
+                        ),
+                      ),
+                      Padding(
+                          padding: const EdgeInsets.all(15),
+                          child: Image.asset(
+                            userIconOutline,
+                            width: 25,
+                            height: 30,
+                          ))
+                    ],
+                  ))
             ],
           ),
         ),
