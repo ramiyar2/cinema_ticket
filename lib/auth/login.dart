@@ -53,9 +53,9 @@ class Login extends StatelessWidget {
                       child: CircleAvatar(
                         backgroundColor: darkBlue,
                         child: Image.asset(
-                          userIcon,
-                          width: 30,
-                          height: 30,
+                          facebook,
+                          width: 25,
+                          height: 25,
                           color: white,
                         ),
                       ),
@@ -68,9 +68,9 @@ class Login extends StatelessWidget {
                       child: CircleAvatar(
                         backgroundColor: darkBlue,
                         child: Image.asset(
-                          userIcon,
-                          width: 30,
-                          height: 30,
+                          twitter,
+                          width: 25,
+                          height: 25,
                           color: white,
                         ),
                       ),
@@ -83,9 +83,9 @@ class Login extends StatelessWidget {
                       child: CircleAvatar(
                         backgroundColor: darkBlue,
                         child: Image.asset(
-                          userIcon,
-                          width: 30,
-                          height: 30,
+                          google,
+                          width: 25,
+                          height: 25,
                           color: white,
                         ),
                       ),
@@ -105,7 +105,7 @@ class Login extends StatelessWidget {
                           vertical: 15, horizontal: 20),
                       child: Text(
                         'OR',
-                        style: Themes().subTitleStyleOP,
+                        style: Themes().subTitleStyleSmall,
                       ),
                     ),
                     Expanded(
@@ -116,11 +116,11 @@ class Login extends StatelessWidget {
                     ),
                   ],
                 ),
-                customTextField(false, 'Example@domin.com', userIconOutline),
+                customTextField(false, 'Example@domin.com', mail),
                 const SizedBox(
                   height: 15,
                 ),
-                customTextField(true, 'Passward ...', userIconOutline),
+                customTextField(true, 'Passward ...', lock),
                 const SizedBox(
                   height: 10,
                 ),
@@ -149,7 +149,7 @@ class Login extends StatelessWidget {
                           ),
                         ),
                         Image.asset(
-                          userIconOutline,
+                          arrow,
                           width: 25,
                           height: 30,
                           color: white,
@@ -208,7 +208,7 @@ class Login extends StatelessWidget {
                     child: Padding(
                         padding: const EdgeInsets.symmetric(horizontal: 15),
                         child: Image.asset(
-                          icon,
+                          closedEye,
                           width: 25,
                           height: 25,
                           color: white,
