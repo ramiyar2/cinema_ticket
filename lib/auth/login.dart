@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../theme/theme.dart';
+import '../widget/text_field.dart';
 
 class Login extends StatelessWidget {
   const Login({Key? key}) : super(key: key);
@@ -45,53 +46,7 @@ class Login extends StatelessWidget {
                   'Log in',
                   style: Themes().importantInfo,
                 ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    GestureDetector(
-                      onTap: () {},
-                      child: CircleAvatar(
-                        backgroundColor: darkBlue,
-                        child: Image.asset(
-                          facebook,
-                          width: 25,
-                          height: 25,
-                          color: white,
-                        ),
-                      ),
-                    ),
-                    const SizedBox(
-                      width: 20,
-                    ),
-                    GestureDetector(
-                      onTap: () {},
-                      child: CircleAvatar(
-                        backgroundColor: darkBlue,
-                        child: Image.asset(
-                          twitter,
-                          width: 25,
-                          height: 25,
-                          color: white,
-                        ),
-                      ),
-                    ),
-                    const SizedBox(
-                      width: 20,
-                    ),
-                    GestureDetector(
-                      onTap: () {},
-                      child: CircleAvatar(
-                        backgroundColor: darkBlue,
-                        child: Image.asset(
-                          google,
-                          width: 25,
-                          height: 25,
-                          color: white,
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
+                socialMedia(),
                 Row(
                   children: [
                     Expanded(
@@ -116,11 +71,19 @@ class Login extends StatelessWidget {
                     ),
                   ],
                 ),
-                customTextField(false, 'Example@domin.com', mail),
+                CustomTextField(
+                  isPassward: false,
+                  hint: 'Example@domin.com',
+                  icon: mail,
+                ),
                 const SizedBox(
                   height: 15,
                 ),
-                customTextField(true, 'Passward ...', lock),
+                CustomTextField(
+                  isPassward: true,
+                  hint: 'Passward ...',
+                  icon: lock,
+                ),
                 const SizedBox(
                   height: 10,
                 ),
@@ -183,56 +146,53 @@ class Login extends StatelessWidget {
     );
   }
 
-  TextField customTextField(bool isPassward, String hint, String icon) {
-    return TextField(
-      decoration: InputDecoration(
-        hintText: hint,
-        prefixIcon: Row(
-          mainAxisSize: MainAxisSize.min,
-          children: <Widget>[
-            Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 15),
-                child: Image.asset(
-                  icon,
-                  width: 25,
-                  height: 25,
-                  color: white,
-                )),
-          ],
-        ),
-        suffixIcon: isPassward
-            ? Row(
-                mainAxisSize: MainAxisSize.min,
-                children: <Widget>[
-                  GestureDetector(
-                    child: Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 15),
-                        child: Image.asset(
-                          closedEye,
-                          width: 25,
-                          height: 25,
-                          color: white,
-                        )),
-                  ),
-                ],
-              )
-            : null,
-        hintStyle: Themes().subTitleStyleOPSmall,
-        enabledBorder: OutlineInputBorder(
-          borderSide: BorderSide(
-            width: 1,
-            color: blue,
+  Row socialMedia() {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        GestureDetector(
+          onTap: () {},
+          child: CircleAvatar(
+            backgroundColor: darkBlue,
+            child: Image.asset(
+              facebook,
+              width: 25,
+              height: 25,
+              color: white,
+            ),
           ),
-          borderRadius: const BorderRadius.all(Radius.circular(10)),
         ),
-        focusedBorder: OutlineInputBorder(
-          borderSide: BorderSide(
-            width: 1,
-            color: blue,
+        const SizedBox(
+          width: 20,
+        ),
+        GestureDetector(
+          onTap: () {},
+          child: CircleAvatar(
+            backgroundColor: darkBlue,
+            child: Image.asset(
+              twitter,
+              width: 25,
+              height: 25,
+              color: white,
+            ),
           ),
-          borderRadius: const BorderRadius.all(Radius.circular(10)),
         ),
-      ),
+        const SizedBox(
+          width: 20,
+        ),
+        GestureDetector(
+          onTap: () {},
+          child: CircleAvatar(
+            backgroundColor: darkBlue,
+            child: Image.asset(
+              google,
+              width: 25,
+              height: 25,
+              color: white,
+            ),
+          ),
+        ),
+      ],
     );
   }
 }
