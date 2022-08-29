@@ -58,6 +58,15 @@ class Themes {
     );
   }
 
+  TextStyle get subTitleStyleOP {
+    return TextStyle(
+      color: Get.isDarkMode ? bgWhite : darkBlue,
+      fontSize: 20,
+      fontFamily: 'Cairo',
+      fontWeight: FontWeight.normal,
+    );
+  }
+
   TextStyle get bodyStyle {
     return TextStyle(
       color: Get.isDarkMode ? white : darkBlue,
