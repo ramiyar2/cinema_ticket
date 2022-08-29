@@ -13,3 +13,7 @@ String closedEye = 'assets/icon/closed_eye.png';
 String eye = 'assets/icon/eye.png';
 String mail = 'assets/icon/mail.png';
 String lock = 'assets/icon/lock.png';
+String facebook = 'assets/icon/facebook.png';
+String google = 'assets/icon/google.png';
+String twitter = 'assets/icon/twitter.png';
+String arrow = 'assets/icon/arrow.png';
