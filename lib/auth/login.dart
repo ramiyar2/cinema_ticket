@@ -102,7 +102,10 @@ class Login extends StatelessWidget {
                   ),
                   Padding(
                     padding: EdgeInsets.symmetric(vertical: 20, horizontal: 20),
-                    child: Text('OR'),
+                    child: Text(
+                      'OR',
+                      style: Themes().subTitleStyleOP,
+                    ),
                   ),
                   Divider(
                     color: bgWhite,
