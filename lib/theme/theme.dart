@@ -48,7 +48,7 @@ class Themes {
       color: Get.isDarkMode ? white : darkBlue,
       fontSize: 32,
       fontFamily: 'Cairo',
-      fontWeight: FontWeight.bold,
+      fontWeight: FontWeight.w500,
       height: 1.5,
     );
   }
@@ -67,6 +67,16 @@ class Themes {
     return TextStyle(
       color: Get.isDarkMode ? whiteOp : darkBlue,
       fontSize: 20,
+      fontFamily: 'Cairo',
+      fontWeight: FontWeight.normal,
+      height: 1.5,
+    );
+  }
+
+  TextStyle get subTitleStyleOPSmall {
+    return TextStyle(
+      color: Get.isDarkMode ? whiteOp : darkBlue,
+      fontSize: 12,
       fontFamily: 'Cairo',
       fontWeight: FontWeight.normal,
       height: 1.5,
