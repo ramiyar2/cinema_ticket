@@ -1,5 +1,4 @@
 import 'package:cinema_ticket/auth/login.dart';
-import 'package:cinema_ticket/theme/colors.dart';
 import 'package:cinema_ticket/theme/theme.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
