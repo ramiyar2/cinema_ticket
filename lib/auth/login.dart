@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../theme/theme.dart';
+import '../widget/social_media.dart';
 import '../widget/text_field.dart';
 
 class Login extends StatelessWidget {
@@ -46,7 +47,7 @@ class Login extends StatelessWidget {
                   'Log in',
                   style: Themes().importantInfo,
                 ),
-                socialMedia(),
+                SocialMedia(),
                 Row(
                   children: [
                     Expanded(
@@ -94,33 +95,7 @@ class Login extends StatelessWidget {
                 const SizedBox(
                   height: 15,
                 ),
-                ElevatedButton(
-                  onPressed: () {},
-                  style: ButtonStyle(
-                    backgroundColor: MaterialStateProperty.all<Color>(blue),
-                  ),
-                  child: Padding(
-                    padding: const EdgeInsets.all(10.0),
-                    child: Row(
-                      children: [
-                        Expanded(
-                          child: Center(
-                            child: Text(
-                              'Log in',
-                              style: Themes().headingStyle,
-                            ),
-                          ),
-                        ),
-                        Image.asset(
-                          arrow,
-                          width: 25,
-                          height: 30,
-                          color: white,
-                        )
-                      ],
-                    ),
-                  ),
-                ),
+                button(),
                 const SizedBox(
                   height: 20,
                 ),
@@ -146,53 +121,33 @@ class Login extends StatelessWidget {
     );
   }
 
-  Row socialMedia() {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        GestureDetector(
-          onTap: () {},
-          child: CircleAvatar(
-            backgroundColor: darkBlue,
-            child: Image.asset(
-              facebook,
-              width: 25,
-              height: 25,
-              color: white,
+  ElevatedButton button() {
+    return ElevatedButton(
+      onPressed: () {},
+      style: ButtonStyle(
+        backgroundColor: MaterialStateProperty.all<Color>(blue),
+      ),
+      child: Padding(
+        padding: const EdgeInsets.all(10.0),
+        child: Row(
+          children: [
+            Expanded(
+              child: Center(
+                child: Text(
+                  'Log in',
+                  style: Themes().headingStyle,
+                ),
+              ),
             ),
-          ),
-        ),
-        const SizedBox(
-          width: 20,
-        ),
-        GestureDetector(
-          onTap: () {},
-          child: CircleAvatar(
-            backgroundColor: darkBlue,
-            child: Image.asset(
-              twitter,
+            Image.asset(
+              arrow,
               width: 25,
-              height: 25,
+              height: 30,
               color: white,
-            ),
-          ),
+            )
+          ],
         ),
-        const SizedBox(
-          width: 20,
-        ),
-        GestureDetector(
-          onTap: () {},
-          child: CircleAvatar(
-            backgroundColor: darkBlue,
-            child: Image.asset(
-              google,
-              width: 25,
-              height: 25,
-              color: white,
-            ),
-          ),
-        ),
-      ],
+      ),
     );
   }
 }
