@@ -19,6 +19,7 @@ class Themes {
       fontSize: 24,
       fontFamily: 'Cairo',
       fontWeight: FontWeight.normal,
+      height: 1.5,
     );
   }
 
@@ -28,6 +29,7 @@ class Themes {
       fontSize: 36,
       fontFamily: 'Cairo',
       fontWeight: FontWeight.normal,
+      height: 1.5,
     );
   }
 
@@ -37,6 +39,7 @@ class Themes {
       fontSize: 48,
       fontFamily: 'Cairo',
       fontWeight: FontWeight.bold,
+      height: 1.5,
     );
   }
 
@@ -46,6 +49,7 @@ class Themes {
       fontSize: 32,
       fontFamily: 'Cairo',
       fontWeight: FontWeight.bold,
+      height: 1.5,
     );
   }
 
@@ -55,6 +59,7 @@ class Themes {
       fontSize: 20,
       fontFamily: 'Cairo',
       fontWeight: FontWeight.normal,
+      height: 1.5,
     );
   }
 
@@ -64,6 +69,7 @@ class Themes {
       fontSize: 20,
       fontFamily: 'Cairo',
       fontWeight: FontWeight.normal,
+      height: 1.5,
     );
   }
 
@@ -73,6 +79,7 @@ class Themes {
       fontSize: 14,
       fontFamily: 'Cairo',
       fontWeight: FontWeight.normal,
+      height: 1.5,
     );
   }
 }
