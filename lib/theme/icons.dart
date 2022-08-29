@@ -1,5 +1,5 @@
 String logoLight = 'assets/img/logo_light.png';
-String logoDark = 'assets/img/logo_light.png';
+String logoDark = 'assets/img/logo_dark.png';
 // icons
 String homeIcon = 'assets/icon/home.png';
 String homeIconOutline = 'assets/icon/home_outline.png';
