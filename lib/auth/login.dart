@@ -16,7 +16,7 @@ class Login extends StatelessWidget {
             children: [
               Row(
                 children: [
-                  Image.asset(Get.isDarkMode ? logoDark : logoLight),
+                  Image.asset(Get.isDarkMode ? logoLight : logoDark),
                   Text('Cinema Ticket')
                 ],
               )
