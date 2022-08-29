@@ -19,7 +19,7 @@ class Login extends StatelessWidget {
         child: SingleChildScrollView(
           child: Container(
             width: MediaQuery.of(context).size.width,
-            height: MediaQuery.of(context).size.height - 50,
+            height: MediaQuery.of(context).size.height,
             color: Theme.of(context).backgroundColor,
             padding:
                 const EdgeInsets.only(top: 40, right: 20, left: 20, bottom: 30),
