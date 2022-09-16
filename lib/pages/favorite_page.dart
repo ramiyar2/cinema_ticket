@@ -25,7 +25,7 @@ class FavoritePage extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            customAppBar(),
+            CustomAppBars.appBar1(),
             const SizedBox(
               height: 20,
             ),

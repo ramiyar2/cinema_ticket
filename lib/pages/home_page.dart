@@ -40,7 +40,7 @@ class HomePage extends StatelessWidget {
               right: 20,
               left: 20,
             ),
-            child: customAppBar(),
+            child: CustomAppBars.appBar1(),
           ),
           const SizedBox(
             height: 20,
