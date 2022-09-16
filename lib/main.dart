@@ -24,6 +24,7 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       theme: Themes.lightTheme,
       darkTheme: Themes.darkTheme,
+      //themeMode: ThemeServies().theme
       themeMode: ThemeMode.dark,
       debugShowCheckedModeBanner: false,
       home: const Login(),
