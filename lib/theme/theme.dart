@@ -6,11 +6,13 @@ class Themes {
   static ThemeData lightTheme = ThemeData(
     backgroundColor: bgWhite,
     brightness: Brightness.light,
+    scaffoldBackgroundColor: bgWhite,
   );
 
   static ThemeData darkTheme = ThemeData(
     backgroundColor: darkerBlue,
     brightness: Brightness.dark,
+    scaffoldBackgroundColor: darkerBlue,
   );
 
   TextStyle get headingStyle {

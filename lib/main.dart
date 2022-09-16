@@ -1,12 +1,10 @@
-import 'package:cinema_ticket/auth/login.dart';
-import 'package:cinema_ticket/auth/sign_up.dart';
-import 'package:cinema_ticket/services/theme_servies.dart';
 import 'package:cinema_ticket/theme/theme.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
 import 'firebase_options.dart';
+import 'screens/home_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -28,7 +26,7 @@ class MyApp extends StatelessWidget {
       //themeMode: ThemeServies().theme
       themeMode: ThemeMode.dark,
       debugShowCheckedModeBanner: false,
-      home: SignUp(),
+      home: const HomeScreen(),
     );
   }
 }

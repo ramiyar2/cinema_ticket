@@ -17,3 +17,5 @@ String facebook = 'assets/icon/facebook.png';
 String google = 'assets/icon/google.png';
 String twitter = 'assets/icon/twitter.png';
 String arrow = 'assets/icon/arrow.png';
+String notification = 'assets/icon/notification.png';
+String search = 'assets/icon/search.png';
