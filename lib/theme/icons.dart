@@ -19,3 +19,4 @@ String twitter = 'assets/icon/twitter.png';
 String arrow = 'assets/icon/arrow.png';
 String notification = 'assets/icon/notification.png';
 String search = 'assets/icon/search.png';
+String share = 'assets/icon/share.png';

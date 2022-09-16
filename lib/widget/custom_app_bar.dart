@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:cinema_ticket/theme/colors.dart';
 import 'package:cinema_ticket/theme/icons.dart';
 import 'package:flutter/material.dart';
@@ -67,6 +69,74 @@ class CustomAppBars {
           ],
         ),
       ],
+    );
+  }
+
+  static Container appBar2() {
+    return Container(
+      alignment: Alignment.topRight,
+      child: Stack(
+        alignment: Alignment.topRight,
+        children: [
+          Container(
+            width: 50,
+            height: 50,
+            decoration: BoxDecoration(
+              color: darkBlue,
+              borderRadius: BorderRadius.circular(10),
+            ),
+            child: Image.asset(
+              notification,
+              color: white,
+              scale: 2.5,
+            ),
+          ),
+          CircleAvatar(
+            radius: 4,
+            backgroundColor: blue,
+          ),
+        ],
+      ),
+    );
+  }
+
+  static Row appBar3() {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      children: [
+        Transform.rotate(
+          angle: pi,
+          child: Image.asset(
+            arrow,
+            color: white,
+          ),
+        ),
+        Row(
+          children: [
+            Image.asset(
+              share,
+              color: white,
+            ),
+            Image.asset(
+              bookmarkIconOutline,
+              color: white,
+            ),
+          ],
+        ),
+      ],
+    );
+  }
+
+  static Container appBar4() {
+    return Container(
+      alignment: Alignment.topLeft,
+      child: Transform.rotate(
+        angle: pi,
+        child: Image.asset(
+          arrow,
+          color: white,
+        ),
+      ),
     );
   }
 }
