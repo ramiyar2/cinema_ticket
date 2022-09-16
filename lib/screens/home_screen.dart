@@ -41,7 +41,7 @@ class _HomeScreenState extends State<HomeScreen> {
             children: <Widget>[
               HomePage(),
               const TicketsPage(),
-              const FavoritePage(),
+              FavoritePage(),
               const UserPage(),
             ],
             onPageChanged: (pageIndex) =>
