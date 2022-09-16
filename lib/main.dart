@@ -27,7 +27,7 @@ class MyApp extends StatelessWidget {
       //themeMode: ThemeServies().theme
       themeMode: ThemeMode.dark,
       debugShowCheckedModeBanner: false,
-      home: const Login(),
+      home: Login(),
     );
   }
 }

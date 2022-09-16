@@ -9,7 +9,10 @@ import '../widget/social_media.dart';
 import '../widget/text_field.dart';
 
 class Login extends StatelessWidget {
-  const Login({Key? key}) : super(key: key);
+  Login({Key? key}) : super(key: key);
+
+  final TextEditingController emailController = TextEditingController();
+  final TextEditingController passController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -77,6 +80,7 @@ class Login extends StatelessWidget {
                   isPassward: false,
                   hint: 'Example@domin.com',
                   icon: mail,
+                  textEditingController: emailController,
                 ),
                 const SizedBox(
                   height: 15,
@@ -85,6 +89,7 @@ class Login extends StatelessWidget {
                   isPassward: true,
                   hint: 'Passward ...',
                   icon: lock,
+                  textEditingController: passController,
                 ),
                 const SizedBox(
                   height: 10,
