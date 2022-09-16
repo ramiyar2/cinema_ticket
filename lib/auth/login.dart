@@ -1,6 +1,7 @@
 import 'package:cinema_ticket/auth/sign_up.dart';
 import 'package:cinema_ticket/theme/colors.dart';
 import 'package:cinema_ticket/theme/icons.dart';
+import 'package:cinema_ticket/widget/logo_small.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -31,20 +32,7 @@ class Login extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Row(
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    Image.asset(
-                      Get.isDarkMode ? logoLight : logoDark,
-                      width: 100,
-                      height: 100,
-                    ),
-                    Text(
-                      'Cinema Ticket',
-                      style: Themes().headingStyle,
-                    )
-                  ],
-                ),
+                logoSmall(),
                 const SizedBox(
                   height: 20,
                 ),
