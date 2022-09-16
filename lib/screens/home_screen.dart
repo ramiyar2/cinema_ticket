@@ -1,4 +1,7 @@
+import 'package:cinema_ticket/pages/favorite_page.dart';
 import 'package:cinema_ticket/pages/home_page.dart';
+import 'package:cinema_ticket/pages/tickets_page.dart';
+import 'package:cinema_ticket/pages/user_page.dart';
 import 'package:flutter/material.dart';
 import 'package:simple_shadow/simple_shadow.dart';
 
@@ -37,6 +40,9 @@ class _HomeScreenState extends State<HomeScreen> {
             controller: pageController,
             children: <Widget>[
               HomePage(),
+              const TicketsPage(),
+              const FavoritePage(),
+              const UserPage(),
             ],
             onPageChanged: (pageIndex) =>
                 setState(() => selectedPage = pageIndex),
