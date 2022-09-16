@@ -65,7 +65,7 @@ class SignUp extends StatelessWidget {
                 const SizedBox(
                   height: 20,
                 ),
-                const SocialMedia(),
+                socialMedia(),
                 const SizedBox(
                   height: 20,
                 ),
@@ -123,7 +123,7 @@ class SignUp extends StatelessWidget {
                 const SizedBox(
                   height: 20,
                 ),
-                LargeButton(
+                largeButton(
                   btnText: 'Sign up',
                   function: () {},
                 ),
@@ -137,7 +137,7 @@ class SignUp extends StatelessWidget {
                       'privacy policy. I have account,',
                       style: Themes().subTitleStyleSmall,
                     ),
-                    ButtonText(
+                    buttonText(
                       btnString: ' Log in',
                       function: () {
                         Get.to(SignUp());

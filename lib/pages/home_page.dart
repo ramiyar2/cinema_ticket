@@ -83,7 +83,7 @@ class HomePage extends StatelessWidget {
             title,
             style: Themes().subTitleStyle,
           ),
-          ButtonText(
+          buttonText(
             btnString: 'see all',
             function: function,
           ),
