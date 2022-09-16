@@ -116,7 +116,9 @@ class Login extends StatelessWidget {
                 const SizedBox(
                   height: 20,
                 ),
-                const LargeButton(),
+                const LargeButton(
+                  btnText: 'Log in',
+                ),
                 const SizedBox(
                   height: 30,
                 ),
