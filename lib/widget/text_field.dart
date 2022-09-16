@@ -3,44 +3,63 @@ import '../theme/colors.dart';
 import '../theme/icons.dart';
 import '../theme/theme.dart';
 
-class CustomTextField extends StatelessWidget {
+class CustomTextField extends StatefulWidget {
   final bool isPassward;
   final String hint;
   final String icon;
+  final TextEditingController textEditingController;
   const CustomTextField(
       {required this.isPassward,
       required this.hint,
       required this.icon,
-      Key? key})
+      Key? key,
+      required this.textEditingController})
       : super(key: key);
+
+  @override
+  State<CustomTextField> createState() => _CustomTextFieldState();
+}
+
+class _CustomTextFieldState extends State<CustomTextField> {
+  bool isVisiblePass = false;
 
   @override
   Widget build(context) {
     return TextField(
+      obscureText: widget.isPassward
+          ? isVisiblePass
+              ? false
+              : true
+          : false,
       decoration: InputDecoration(
-        hintText: hint,
+        hintText: widget.hint,
         prefixIcon: Row(
           mainAxisSize: MainAxisSize.min,
           children: <Widget>[
             Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 15),
                 child: Image.asset(
-                  icon,
+                  widget.icon,
                   width: 25,
                   height: 25,
                   color: white,
                 )),
           ],
         ),
-        suffixIcon: isPassward
+        suffixIcon: widget.isPassward
             ? Row(
                 mainAxisSize: MainAxisSize.min,
                 children: <Widget>[
                   GestureDetector(
+                    onTap: () {
+                      setState(() {
+                        isVisiblePass = !isVisiblePass;
+                      });
+                    },
                     child: Padding(
                         padding: const EdgeInsets.symmetric(horizontal: 15),
                         child: Image.asset(
-                          closedEye,
+                          isVisiblePass ? eye : closedEye,
                           width: 25,
                           height: 25,
                           color: white,
