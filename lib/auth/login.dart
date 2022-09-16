@@ -43,8 +43,11 @@ class Login extends StatelessWidget {
                     )
                   ],
                 ),
+                const SizedBox(
+                  height: 20,
+                ),
                 Text(
-                  'Welcome ! \n Back',
+                  'Welcome ! \nBack',
                   style: Themes().subHeadingStyle,
                 ),
                 Text(
@@ -52,6 +55,9 @@ class Login extends StatelessWidget {
                   style: Themes().importantInfo,
                 ),
                 const SocialMedia(),
+                const SizedBox(
+                  height: 20,
+                ),
                 Row(
                   children: [
                     Expanded(
@@ -99,7 +105,7 @@ class Login extends StatelessWidget {
                   style: Themes().subTitleStyleOPSmall,
                 ),
                 const SizedBox(
-                  height: 15,
+                  height: 20,
                 ),
                 const LargeButton(),
                 const SizedBox(
@@ -115,7 +121,7 @@ class Login extends StatelessWidget {
                     GestureDetector(
                         child: Text(
                       ' Create new',
-                      style: Themes().subTitleStyleSmall,
+                      style: Themes().subTitleStyleSmallActive,
                     )),
                   ],
                 ),

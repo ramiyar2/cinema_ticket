@@ -29,7 +29,7 @@ class Themes {
       fontSize: 36,
       fontFamily: 'Cairo',
       fontWeight: FontWeight.normal,
-      height: 1.5,
+      height: 0.9,
     );
   }
 
@@ -66,6 +66,16 @@ class Themes {
   TextStyle get subTitleStyleSmall {
     return TextStyle(
       color: Get.isDarkMode ? white : darkBlue,
+      fontSize: 12,
+      fontFamily: 'Cairo',
+      fontWeight: FontWeight.normal,
+      height: 1.5,
+    );
+  }
+
+  TextStyle get subTitleStyleSmallActive {
+    return TextStyle(
+      color: blue,
       fontSize: 12,
       fontFamily: 'Cairo',
       fontWeight: FontWeight.normal,

@@ -14,6 +14,7 @@ class SocialMedia extends StatelessWidget {
         GestureDetector(
           onTap: () {},
           child: CircleAvatar(
+            radius: 20,
             backgroundColor: darkBlue,
             child: Image.asset(
               facebook,
@@ -29,6 +30,7 @@ class SocialMedia extends StatelessWidget {
         GestureDetector(
           onTap: () {},
           child: CircleAvatar(
+            radius: 20,
             backgroundColor: darkBlue,
             child: Image.asset(
               twitter,
@@ -44,6 +46,7 @@ class SocialMedia extends StatelessWidget {
         GestureDetector(
           onTap: () {},
           child: CircleAvatar(
+            radius: 20,
             backgroundColor: darkBlue,
             child: Image.asset(
               google,
