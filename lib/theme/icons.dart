@@ -20,3 +20,5 @@ String arrow = 'assets/icon/arrow.png';
 String notification = 'assets/icon/notification.png';
 String search = 'assets/icon/search.png';
 String share = 'assets/icon/share.png';
+String star = 'assets/icon/star.png';
+String play = 'assets/icon/play.png';

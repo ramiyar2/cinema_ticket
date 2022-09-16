@@ -115,6 +115,16 @@ class Themes {
     );
   }
 
+  TextStyle get bodyStyleOP {
+    return TextStyle(
+      color: Get.isDarkMode ? whiteOp : darkBlue,
+      fontSize: 14,
+      fontFamily: 'Cairo',
+      fontWeight: FontWeight.normal,
+      height: 1,
+    );
+  }
+
   TextStyle get ticketTitle {
     return TextStyle(
       color: Get.isDarkMode ? blackOp : whiteOp,
@@ -125,9 +135,29 @@ class Themes {
     );
   }
 
+  TextStyle get ticketTitleWhite {
+    return TextStyle(
+      color: Get.isDarkMode ? white : white,
+      fontSize: 10,
+      fontFamily: 'Cairo',
+      fontWeight: FontWeight.normal,
+      height: 1,
+    );
+  }
+
   TextStyle get ticketBoday {
     return TextStyle(
       color: Get.isDarkMode ? black : white,
+      fontSize: 15,
+      fontFamily: 'Cairo',
+      fontWeight: FontWeight.normal,
+      height: 1,
+    );
+  }
+
+  TextStyle get cinemaBtn {
+    return TextStyle(
+      color: Get.isDarkMode ? white : black,
       fontSize: 15,
       fontFamily: 'Cairo',
       fontWeight: FontWeight.normal,

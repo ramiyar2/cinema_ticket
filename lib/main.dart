@@ -1,3 +1,4 @@
+import 'package:cinema_ticket/screens/movie_info.dart';
 import 'package:cinema_ticket/theme/theme.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
@@ -12,7 +13,7 @@ void main() async {
     options: DefaultFirebaseOptions.currentPlatform,
   );
   await GetStorage.init();
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -26,7 +27,7 @@ class MyApp extends StatelessWidget {
       //themeMode: ThemeServies().theme
       themeMode: ThemeMode.dark,
       debugShowCheckedModeBanner: false,
-      home: const HomeScreen(),
+      home: MovieInfo(),
     );
   }
 }
