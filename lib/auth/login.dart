@@ -50,9 +50,15 @@ class Login extends StatelessWidget {
                   'Welcome ! \nBack',
                   style: Themes().subHeadingStyle,
                 ),
+                const SizedBox(
+                  height: 20,
+                ),
                 Text(
                   'Log in',
                   style: Themes().importantInfo,
+                ),
+                const SizedBox(
+                  height: 20,
                 ),
                 const SocialMedia(),
                 const SizedBox(
@@ -82,6 +88,9 @@ class Login extends StatelessWidget {
                     ),
                   ],
                 ),
+                const SizedBox(
+                  height: 20,
+                ),
                 CustomTextField(
                   isPassward: false,
                   hint: 'Example@domin.com',
@@ -109,7 +118,7 @@ class Login extends StatelessWidget {
                 ),
                 const LargeButton(),
                 const SizedBox(
-                  height: 20,
+                  height: 30,
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
