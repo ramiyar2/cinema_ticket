@@ -26,8 +26,11 @@ class SignUp extends StatelessWidget {
             width: MediaQuery.of(context).size.width,
             height: MediaQuery.of(context).size.height,
             color: Theme.of(context).backgroundColor,
-            padding:
-                const EdgeInsets.only(top: 40, right: 20, left: 20, bottom: 30),
+            padding: const EdgeInsets.only(
+              top: 40,
+              right: 20,
+              left: 20,
+            ),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -125,7 +128,7 @@ class SignUp extends StatelessWidget {
                   function: () {},
                 ),
                 const SizedBox(
-                  height: 30,
+                  height: 20,
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,

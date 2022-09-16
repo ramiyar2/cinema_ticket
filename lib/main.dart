@@ -1,4 +1,5 @@
 import 'package:cinema_ticket/auth/login.dart';
+import 'package:cinema_ticket/auth/sign_up.dart';
 import 'package:cinema_ticket/services/theme_servies.dart';
 import 'package:cinema_ticket/theme/theme.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -27,7 +28,7 @@ class MyApp extends StatelessWidget {
       //themeMode: ThemeServies().theme
       themeMode: ThemeMode.dark,
       debugShowCheckedModeBanner: false,
-      home: Login(),
+      home: SignUp(),
     );
   }
 }
