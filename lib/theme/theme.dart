@@ -114,4 +114,24 @@ class Themes {
       height: 1,
     );
   }
+
+  TextStyle get ticketTitle {
+    return TextStyle(
+      color: Get.isDarkMode ? blackOp : whiteOp,
+      fontSize: 10,
+      fontFamily: 'Cairo',
+      fontWeight: FontWeight.normal,
+      height: 1,
+    );
+  }
+
+  TextStyle get ticketBoday {
+    return TextStyle(
+      color: Get.isDarkMode ? black : white,
+      fontSize: 15,
+      fontFamily: 'Cairo',
+      fontWeight: FontWeight.normal,
+      height: 1,
+    );
+  }
 }
