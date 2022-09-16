@@ -6,12 +6,14 @@ import '../theme/theme.dart';
 
 class LargeButton extends StatelessWidget {
   final String btnText;
-  const LargeButton({Key? key, required this.btnText}) : super(key: key);
+  final Function() function;
+  const LargeButton({Key? key, required this.btnText, required this.function})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
-      onPressed: () {},
+      onPressed: function,
       style: ButtonStyle(
         backgroundColor: MaterialStateProperty.all<Color>(blue),
       ),

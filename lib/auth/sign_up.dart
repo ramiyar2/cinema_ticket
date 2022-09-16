@@ -5,11 +5,12 @@ import 'package:get/get.dart';
 
 import '../theme/theme.dart';
 import '../widget/button_large.dart';
+import '../widget/button_text.dart';
 import '../widget/social_media.dart';
 import '../widget/text_field.dart';
 
-class Login extends StatelessWidget {
-  Login({Key? key}) : super(key: key);
+class SignUp extends StatelessWidget {
+  SignUp({Key? key}) : super(key: key);
 
   final TextEditingController emailController = TextEditingController();
   final TextEditingController passController = TextEditingController();
@@ -119,8 +120,9 @@ class Login extends StatelessWidget {
                 const SizedBox(
                   height: 20,
                 ),
-                const LargeButton(
+                LargeButton(
                   btnText: 'Sign up',
+                  function: () {},
                 ),
                 const SizedBox(
                   height: 30,
@@ -132,11 +134,12 @@ class Login extends StatelessWidget {
                       'privacy policy. I have account,',
                       style: Themes().subTitleStyleSmall,
                     ),
-                    GestureDetector(
-                        child: Text(
-                      ' Log in',
-                      style: Themes().subTitleStyleSmallActive,
-                    )),
+                    ButtonText(
+                      btnString: ' Log in',
+                      function: () {
+                        Get.to(SignUp());
+                      },
+                    ),
                   ],
                 ),
               ],

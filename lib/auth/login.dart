@@ -1,3 +1,4 @@
+import 'package:cinema_ticket/auth/sign_up.dart';
 import 'package:cinema_ticket/theme/colors.dart';
 import 'package:cinema_ticket/theme/icons.dart';
 import 'package:flutter/material.dart';
@@ -5,6 +6,7 @@ import 'package:get/get.dart';
 
 import '../theme/theme.dart';
 import '../widget/button_large.dart';
+import '../widget/button_text.dart';
 import '../widget/social_media.dart';
 import '../widget/text_field.dart';
 
@@ -116,8 +118,9 @@ class Login extends StatelessWidget {
                 const SizedBox(
                   height: 20,
                 ),
-                const LargeButton(
+                LargeButton(
                   btnText: 'Log in',
+                  function: () {},
                 ),
                 const SizedBox(
                   height: 30,
@@ -129,11 +132,12 @@ class Login extends StatelessWidget {
                       'I don\'t have account,',
                       style: Themes().subTitleStyleSmall,
                     ),
-                    GestureDetector(
-                        child: Text(
-                      ' Create new',
-                      style: Themes().subTitleStyleSmallActive,
-                    )),
+                    ButtonText(
+                      btnString: ' Create new',
+                      function: () {
+                        Get.to(SignUp());
+                      },
+                    ),
                   ],
                 ),
               ],
