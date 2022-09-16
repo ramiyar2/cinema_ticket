@@ -109,6 +109,8 @@ class CustomAppBars {
           child: Image.asset(
             arrow,
             color: white,
+            width: 30,
+            height: 25,
           ),
         ),
         Row(
@@ -116,10 +118,14 @@ class CustomAppBars {
             Image.asset(
               share,
               color: white,
+              width: 30,
+              height: 25,
             ),
             Image.asset(
               bookmarkIconOutline,
               color: white,
+              width: 30,
+              height: 25,
             ),
           ],
         ),
@@ -135,6 +141,8 @@ class CustomAppBars {
         child: Image.asset(
           arrow,
           color: white,
+          width: 30,
+          height: 25,
         ),
       ),
     );
