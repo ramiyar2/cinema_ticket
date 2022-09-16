@@ -121,6 +121,9 @@ class CustomAppBars {
               width: 30,
               height: 25,
             ),
+            const SizedBox(
+              width: 20,
+            ),
             Image.asset(
               bookmarkIconOutline,
               color: white,
