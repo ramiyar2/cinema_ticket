@@ -57,6 +57,9 @@ class HomePage extends StatelessWidget {
           moiveCovers(_nowShowingMove),
           title('Up coming', () {}),
           moiveCovers(_comingMove),
+          const SizedBox(
+            height: 20,
+          ),
         ],
       ),
     );
