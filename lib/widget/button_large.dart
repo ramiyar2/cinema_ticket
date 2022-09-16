@@ -5,7 +5,8 @@ import '../theme/icons.dart';
 import '../theme/theme.dart';
 
 class LargeButton extends StatelessWidget {
-  const LargeButton({Key? key}) : super(key: key);
+  final String btnText;
+  const LargeButton({Key? key, required this.btnText}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -21,7 +22,7 @@ class LargeButton extends StatelessWidget {
             Expanded(
               child: Center(
                 child: Text(
-                  'Log in',
+                  btnText,
                   style: Themes().headingStyle,
                 ),
               ),
