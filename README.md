@@ -1,4 +1,5 @@
-<img src="screenshots/Logo.png"  alt="Chatify" width="100">
+<img src="(https://user-images.githubusercontent.com/56196099/190877037-e5597f50-8a53-4c25-ad74-057efb7ac7c7.png"  alt="Chatify" width="100">
+![logo](https://user-images.githubusercontent.com/56196099/190877037-e5597f50-8a53-4c25-ad74-057efb7ac7c7.png)
 
 # ⭐ Chat App
 
