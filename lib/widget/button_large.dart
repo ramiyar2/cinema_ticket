@@ -4,7 +4,7 @@ import '../theme/colors.dart';
 import '../theme/icons.dart';
 import '../theme/theme.dart';
 
-ElevatedButton largeButton({required btnText, required function}) {
+ElevatedButton largeButton({required btnText, required Function()? function}) {
   return ElevatedButton(
     onPressed: function,
     style: ButtonStyle(

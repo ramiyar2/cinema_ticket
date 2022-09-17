@@ -1,3 +1,5 @@
+import 'package:cinema_ticket/auth/login.dart';
+import 'package:cinema_ticket/screens/home_screen.dart';
 import 'package:cinema_ticket/theme/colors.dart';
 import 'package:cinema_ticket/theme/icons.dart';
 import 'package:cinema_ticket/widget/logo_small.dart';
@@ -113,7 +115,9 @@ class SignUp extends StatelessWidget {
                 ),
                 largeButton(
                   btnText: 'Sign up',
-                  function: () {},
+                  function: () {
+                    Get.off(const HomeScreen());
+                  },
                 ),
                 const SizedBox(
                   height: 20,
@@ -128,7 +132,7 @@ class SignUp extends StatelessWidget {
                     buttonText(
                       btnString: ' Log in',
                       function: () {
-                        Get.to(SignUp());
+                        Get.to(Login());
                       },
                     ),
                   ],

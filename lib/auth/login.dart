@@ -5,6 +5,7 @@ import 'package:cinema_ticket/widget/logo_small.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import '../screens/home_screen.dart';
 import '../theme/theme.dart';
 import '../widget/button_large.dart';
 import '../widget/button_text.dart';
@@ -108,7 +109,9 @@ class Login extends StatelessWidget {
                 ),
                 largeButton(
                   btnText: 'Log in',
-                  function: () {},
+                  function: () {
+                    Get.off(const HomeScreen());
+                  },
                 ),
                 const SizedBox(
                   height: 30,

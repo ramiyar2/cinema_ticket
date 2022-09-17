@@ -1,6 +1,8 @@
+import 'package:cinema_ticket/screens/seat_screen.dart';
 import 'package:cinema_ticket/theme/colors.dart';
 import 'package:cinema_ticket/widget/button_large.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 import '../theme/theme.dart';
 import '../widget/buttom_small.dart';
@@ -112,8 +114,11 @@ class MovieInfo extends StatelessWidget {
               Padding(
                 padding:
                     const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
-                child:
-                    largeButton(btnText: 'Get your ticket ', function: () {}),
+                child: largeButton(
+                    btnText: 'Get your ticket ',
+                    function: () {
+                      Get.to(SeatScreen());
+                    }),
               ),
               Padding(
                 padding:

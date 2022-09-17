@@ -1,8 +1,10 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:cinema_ticket/theme/colors.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
+
+import '../screens/movie_info.dart';
 
 class TrendingMovie extends StatefulWidget {
   final List<String> trendingMovieCover;
@@ -25,21 +27,24 @@ class _TrendingMovieState extends State<TrendingMovie> {
           carouselController: _carouselController,
           itemCount: widget.trendingMovieCover.length,
           itemBuilder: (BuildContext context, int index, int realIndex) {
-            return Container(
-              width: MediaQuery.of(context).size.width - 60,
-              height: 200,
-              margin: const EdgeInsets.only(
-                top: 20,
-              ),
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(10),
-                image: DecorationImage(
-                  image: NetworkImage(widget.trendingMovieCover[index]),
-                  fit: BoxFit.cover,
-                  opacity: index == activeIndex ? 1.0 : 0.5,
+            return InkWell(
+              onTap: () => Get.to(const MovieInfo()),
+              child: Container(
+                width: MediaQuery.of(context).size.width - 60,
+                height: 200,
+                margin: const EdgeInsets.only(
+                  top: 20,
                 ),
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10),
+                  image: DecorationImage(
+                    image: NetworkImage(widget.trendingMovieCover[index]),
+                    fit: BoxFit.cover,
+                    opacity: index == activeIndex ? 1.0 : 0.5,
+                  ),
+                ),
+                child: null,
               ),
-              child: null,
             );
           },
           options: CarouselOptions(

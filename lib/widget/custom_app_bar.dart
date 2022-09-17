@@ -3,6 +3,7 @@ import 'dart:math';
 import 'package:cinema_ticket/theme/colors.dart';
 import 'package:cinema_ticket/theme/icons.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 import '../theme/theme.dart';
 
@@ -106,11 +107,14 @@ class CustomAppBars {
       children: [
         Transform.rotate(
           angle: pi,
-          child: Image.asset(
-            arrow,
-            color: white,
-            width: 30,
-            height: 25,
+          child: InkWell(
+            onTap: () => Get.back(),
+            child: Image.asset(
+              arrow,
+              color: white,
+              width: 30,
+              height: 30,
+            ),
           ),
         ),
         Row(
@@ -141,11 +145,14 @@ class CustomAppBars {
       alignment: Alignment.topLeft,
       child: Transform.rotate(
         angle: pi,
-        child: Image.asset(
-          arrow,
-          color: white,
-          width: 30,
-          height: 30,
+        child: InkWell(
+          onTap: () => Get.back(),
+          child: Image.asset(
+            arrow,
+            color: white,
+            width: 30,
+            height: 30,
+          ),
         ),
       ),
     );

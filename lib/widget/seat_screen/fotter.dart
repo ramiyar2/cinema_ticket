@@ -1,6 +1,8 @@
 import 'dart:math';
 
+import 'package:cinema_ticket/screens/ticket_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 import '../../theme/colors.dart';
 import '../../theme/icons.dart';
@@ -33,30 +35,33 @@ Widget seatFotter() {
   );
 }
 
-Container pay() {
-  return Container(
-    padding: const EdgeInsets.all(15),
-    decoration: BoxDecoration(
-      color: darkBlue,
-      borderRadius: const BorderRadius.only(topLeft: Radius.circular(20)),
-    ),
-    alignment: Alignment.bottomRight,
-    child: Row(
-      children: [
-        const Text('Buy'),
-        const SizedBox(
-          width: 20,
-        ),
-        Transform.rotate(
-          angle: pi / 2,
-          child: Image.asset(
-            arrowUp,
-            width: 30,
-            height: 30,
-            color: white,
+Widget pay() {
+  return InkWell(
+    onTap: () => Get.to(const TicketScreen()),
+    child: Container(
+      padding: const EdgeInsets.all(15),
+      decoration: BoxDecoration(
+        color: darkBlue,
+        borderRadius: const BorderRadius.only(topLeft: Radius.circular(20)),
+      ),
+      alignment: Alignment.bottomRight,
+      child: Row(
+        children: [
+          const Text('Buy'),
+          const SizedBox(
+            width: 20,
           ),
-        ),
-      ],
+          Transform.rotate(
+            angle: pi / 2,
+            child: Image.asset(
+              arrowUp,
+              width: 30,
+              height: 30,
+              color: white,
+            ),
+          ),
+        ],
+      ),
     ),
   );
 }
