@@ -25,3 +25,5 @@ String play = 'assets/icon/play.png';
 String dollar = 'assets/icon/dollar.png';
 String location = 'assets/icon/location.png';
 String arrowUp = 'assets/icon/up-arrow.png';
+String barCode = 'assets/icon/bar-code.png';
+String qrCode = 'assets/icon/qr-code.png';

@@ -174,4 +174,14 @@ class Themes {
       height: 1,
     );
   }
+
+  TextStyle get largeText {
+    return TextStyle(
+      color: Get.isDarkMode ? white : darkBlue,
+      fontSize: 32,
+      fontFamily: 'Cairo',
+      fontWeight: FontWeight.normal,
+      height: 0.9,
+    );
+  }
 }
