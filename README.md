@@ -10,16 +10,19 @@
 
 </div>
 
-Welcome ,That is a flutter chat app built with Firestore and Firebase Cloud. It is like whatsapp messenger.User can create stories,chat and search in real time.
+Welcome ,That is a flutter Cinema booking ticket built with Firestore and Firebase Cloud.user can choice cinema ,seat , see trialler and rate.
 
 <br><br>  
 
 ## 📱 Demo
 
+
 ![1](https://user-images.githubusercontent.com/56196099/190877528-d1bd063a-4efb-4e61-b1fd-e0976ca0a78b.jpg)
 ![2](https://user-images.githubusercontent.com/56196099/190877343-9ed61ed2-8c6d-4285-a5ba-b431d4787a11.jpg)
 ![3](https://user-images.githubusercontent.com/56196099/190877347-f4b58418-2189-479b-beb5-c344ff71f31f.jpg)
 ![4](https://user-images.githubusercontent.com/56196099/190877348-dc8afced-f760-40f5-b0f7-766127b3f773.jpg)
+![5](https://user-images.githubusercontent.com/56196099/190878197-e4dc0591-c1ce-4f15-91d4-6bf9603e592a.jpg)
+![6](https://user-images.githubusercontent.com/56196099/190878611-ae46d242-cba4-4cea-b8fb-40a2418c07d1.jpg)
 ![mode-s](https://user-images.githubusercontent.com/56196099/190877357-f7d18eae-bcb0-4443-8f3d-e5d4124cb8c0.jpg)
 ![mode-s-light](https://user-images.githubusercontent.com/56196099/190877358-88be0970-d7d3-49a0-8744-8c71e8808574.jpg)
 
@@ -29,8 +32,7 @@ Welcome ,That is a flutter chat app built with Firestore and Firebase Cloud. It 
 
 In the command line:
 
-    $ git clone https://github.com/ramiyar2/chat-app.git
-    $ cd chat_app/
+    $ git clone https://github.com/ramiyar2/cinema_ticket.git
     $ flutter run
 
 #### 🤖 For running on Android or IOS emulator   
@@ -54,14 +56,13 @@ samples, guidance on mobile development, and a full API reference.
 
 ## ✅ Features
 - User Authentication.
-- Realtime chat.
-- Send text messages, stickers, GIFs & Images.
-- create individual and group chats and delete them
-- view and add messages
-- light mode(coming soon)
-- notification(coming soon)
-- instant messages
-- Video and voice calling.
+- Select seat.
+- Selecte cinema.
+- 5 Themes(2 modes).
+- view tickets.
+- notification(coming soon).
+- view trialler.
+- view IDMB rate.
 
 <br><br>
 
@@ -71,13 +72,12 @@ samples, guidance on mobile development, and a full API reference.
 - [Figma](https://www.figma.com/)
 - [Adobe Ps](https://www.adobe.com/products/photoshop/)
 
-**Notes:** All design info is available on [Behance](https://www.behance.net/gallery/151070831/Chat-app),As well as the design files available on [figma](https://www.figma.com/file/qkQKP5DO3YmgVLog4TQobt/Untitled?node-id=0%3A1).
+**Notes:** All design info is available on Behance (soon),As well as the design files available on [figma](https://www.figma.com/file/JdE2ygonULvAuqtYTFrWdY/Cinema?node-id=0%3A1).
 
 ### 👨‍💻 Coding
 - [Flutter & Dart](http://flutter.dev)
 - [Firebase  Flutter](https://firebase.google.com/)
-- [MobX State Management](https://pub.dev/packages/mobx)
-- [Shared Preferences](https://pub.dev/packages/shared_preferences)
+- [Getx State Management](https://pub.dev/packages/getx)
 
 <br><br>
 
