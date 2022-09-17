@@ -16,11 +16,12 @@ Welcome ,That is a flutter chat app built with Firestore and Firebase Cloud. It 
 
 ## 📱 Demo
 
-
-![](screenshots/1.jpg)
-![](screenshots/2.jpg)
-![](screenshots/3.jpg)
-![](screenshots/4.jpg)
+![1](https://user-images.githubusercontent.com/56196099/190877528-d1bd063a-4efb-4e61-b1fd-e0976ca0a78b.jpg)
+![2](https://user-images.githubusercontent.com/56196099/190877343-9ed61ed2-8c6d-4285-a5ba-b431d4787a11.jpg)
+![3](https://user-images.githubusercontent.com/56196099/190877347-f4b58418-2189-479b-beb5-c344ff71f31f.jpg)
+![4](https://user-images.githubusercontent.com/56196099/190877348-dc8afced-f760-40f5-b0f7-766127b3f773.jpg)
+![mode-s](https://user-images.githubusercontent.com/56196099/190877357-f7d18eae-bcb0-4443-8f3d-e5d4124cb8c0.jpg)
+![mode-s-light](https://user-images.githubusercontent.com/56196099/190877358-88be0970-d7d3-49a0-8744-8c71e8808574.jpg)
 
 <br><br>
 
