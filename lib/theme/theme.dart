@@ -61,7 +61,7 @@ class Themes {
       fontSize: 20,
       fontFamily: 'Cairo',
       fontWeight: FontWeight.normal,
-      height: 1,
+      height: 0.9,
     );
   }
 
@@ -71,7 +71,7 @@ class Themes {
       fontSize: 12,
       fontFamily: 'Cairo',
       fontWeight: FontWeight.normal,
-      height: 1,
+      height: 0.9,
     );
   }
 
@@ -138,6 +138,16 @@ class Themes {
   TextStyle get ticketTitleWhite {
     return TextStyle(
       color: Get.isDarkMode ? white : white,
+      fontSize: 10,
+      fontFamily: 'Cairo',
+      fontWeight: FontWeight.normal,
+      height: 1,
+    );
+  }
+
+  TextStyle get ticketTitleWhiteOp {
+    return TextStyle(
+      color: Get.isDarkMode ? whiteOp : white,
       fontSize: 10,
       fontFamily: 'Cairo',
       fontWeight: FontWeight.normal,
