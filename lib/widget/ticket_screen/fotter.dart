@@ -44,9 +44,7 @@ Widget fotter() {
               ),
             ],
           ),
-          Container(
-            child: Image.asset(qrCode),
-          )
+          Image.asset(qrCode)
         ],
       ),
     ),
