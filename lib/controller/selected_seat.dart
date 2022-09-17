@@ -1,14 +1,19 @@
 import 'package:get/get.dart';
 
 class SelectedSeat extends GetxController {
-  RxList slecetedIndex = [
-    {'row': 10, 'col': 6},
-  ].obs;
-  changeCinema(int col, int row, String table) {
+  RxList slecetedIndex = [].obs;
+  RxList removedIndex = [].obs;
+  selectSeat({required int col, required int row}) {
     slecetedIndex.add(
-      {
-        {'row': row, 'col': col, 'table': table}
-      },
+      {'row': row, 'col': col},
+    );
+    print(slecetedIndex);
+  }
+
+  deleteSeat({required int col, required int row}) {
+    print('delete called');
+    slecetedIndex.remove(
+      {'row': row, 'col': col},
     );
   }
 }
