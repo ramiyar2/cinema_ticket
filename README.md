@@ -1,8 +1,5 @@
 <img src="https://user-images.githubusercontent.com/56196099/190877037-e5597f50-8a53-4c25-ad74-057efb7ac7c7.png"  alt="Chatify" width="100">
 
-
-![logo](https://user-images.githubusercontent.com/56196099/190877037-e5597f50-8a53-4c25-ad74-057efb7ac7c7.png)
-
 # ⭐ Chat App
 
 <div align="center">
@@ -18,13 +15,6 @@ Welcome ,That is a flutter chat app built with Firestore and Firebase Cloud. It 
 <br><br>  
 
 ## 📱 Demo
-
-https://drive.google.com/file/d/1HSoaP4emIdBWtO2y3BFzM0xIGIMu4-H6/view?usp=sharing
-
-
-https://user-images.githubusercontent.com/56196099/186564693-f0f7982b-b3d3-4d8b-b832-d7728f36d263.mp4
-
-
 
 
 ![](screenshots/1.jpg)
