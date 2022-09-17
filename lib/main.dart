@@ -1,5 +1,4 @@
-import 'package:cinema_ticket/screens/seat_screen.dart';
-import 'package:cinema_ticket/screens/ticket_screen.dart';
+import 'package:cinema_ticket/screens/onboarding/splash_screen.dart';
 import 'package:cinema_ticket/theme/theme.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
@@ -27,7 +26,7 @@ class MyApp extends StatelessWidget {
       //themeMode: ThemeServies().theme
       themeMode: ThemeMode.dark,
       debugShowCheckedModeBanner: false,
-      home: const TicketScreen(),
+      home: const SplashScreen(),
     );
   }
 }
