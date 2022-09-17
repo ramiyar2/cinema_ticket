@@ -145,7 +145,7 @@ class CustomAppBars {
           arrow,
           color: white,
           width: 30,
-          height: 25,
+          height: 30,
         ),
       ),
     );
