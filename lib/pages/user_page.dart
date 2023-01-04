@@ -1,6 +1,5 @@
 import 'package:cinema_ticket/theme/colors.dart';
 import 'package:cinema_ticket/theme/icons.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../theme/theme.dart';
