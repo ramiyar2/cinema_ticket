@@ -12,20 +12,24 @@ class TicketScreen extends StatelessWidget {
     return Scaffold(
       appBar: null,
       body: SafeArea(
-        child: Padding(
-          padding: const EdgeInsets.only(
-            top: 40,
-          ),
-          child: Column(
-            children: [
-              Padding(
-                padding: const EdgeInsets.only(right: 20, left: 20),
-                child: CustomAppBars.appBar4(),
-              ),
-              tickect(),
-              bartickect(context),
-              fotter(),
-            ],
+        child: SingleChildScrollView(
+          child: Container(
+            width: MediaQuery.of(context).size.width,
+            height: MediaQuery.of(context).size.height,
+            padding: const EdgeInsets.only(
+              top: 40,
+            ),
+            child: Column(
+              children: [
+                Padding(
+                  padding: const EdgeInsets.only(right: 20, left: 20),
+                  child: CustomAppBars.appBar4(),
+                ),
+                tickect(),
+                bartickect(context),
+                fotter(),
+              ],
+            ),
           ),
         ),
       ),

@@ -122,20 +122,22 @@ class SignUp extends StatelessWidget {
                 const SizedBox(
                   height: 20,
                 ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Text(
-                      'privacy policy. I have account,',
-                      style: Themes().subTitleStyleSmall,
-                    ),
-                    buttonText(
-                      btnString: ' Log in',
-                      function: () {
-                        Get.to(Login());
-                      },
-                    ),
-                  ],
+                Flexible(
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        'privacy policy. I have account,',
+                        style: Themes().subTitleStyleSmall,
+                      ),
+                      buttonText(
+                        btnString: ' Log in',
+                        function: () {
+                          Get.to(Login());
+                        },
+                      ),
+                    ],
+                  ),
                 ),
               ],
             ),
