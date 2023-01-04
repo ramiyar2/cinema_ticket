@@ -97,7 +97,7 @@ samples, guidance on mobile development, and a full API reference.
 ```
 MIT License
 
-Copyright (c) 2020 Ramiyar yusf
+Copyright (c) 2023 Ramiyar yusf
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
